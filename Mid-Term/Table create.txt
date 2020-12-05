@@ -1,0 +1,12 @@
+CREATE TABLE Course( snum decimal(9,0) NOT NULL, cname VARCHAR(40) NOT NULL, primary key(snum,cname))
+CREATE TABLE Class( name VARCHAR(40) PRIMARY KEY NOT NULL, meets_at VARCHAR(20), room VARCHAR(10), fid decimal(9,0))
+CREATE TABLE Student (
+    snum decimal(9,0) PRIMARY KEY,
+    sname varchar(30),
+    major varchar(25),
+    level varchar(2),
+    age  decimal(3,0));
+CREATE TABLE department (
+fid decimal(9,0) PRIMARY KEY,
+    fname varchar(30),
+    deptid decimal(2,0));
